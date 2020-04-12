@@ -1,0 +1,86 @@
+.select {
+    &-form--amounts {
+        width: 260px;
+        margin-top: 15px;
+        margin-left: 20px;
+        
+        &__bottles {
+            width: 58px;
+            margin-left: 19px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            .minus,
+            .plus {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: #FFC369;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+                font-weight: bold;
+                cursor: pointer;
+            }
+    
+            input {
+                width: 16px;
+                height: 14px;
+                background-color: rgba(0, 0, 0, 0.0);
+                border: 0px;
+                text-align: center;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                color: #455273;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+        }
+        .left {
+            margin-left: 20px;
+        }
+        .right {
+            margin-left: 120px;
+        }
+        .righter {
+            margin-left: 220px;
+        }
+    }
+
+    &-total {
+        width: 280px;
+        height: 33px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom:  1px solid #D5DDE0;
+        h2 {
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        p {
+            width:40%;
+            text-align: right;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+            color: #455273;
+        }
+    }
+
+    hr {
+        width: 280px;
+        margin-top: 30px;
+        margin-left: 0;
+        padding: 0;
+        height: 0;
+        border: none;
+        border-top: 1px dotted #D5DDE0;
+    }
+}

@@ -1,0 +1,192 @@
+@import "~normalize.css";
+@import "./component/promo/promo.less";
+@import "./component/contact/contact.less";
+@import "./component/select/select.less";
+@import "./component/select/select-bottles/select-bottles.less";
+@import "./component/select/select-amount/select-amount.less";
+@import "./component/select/select-time/select-time.less";
+@import "./component/result/result.less";
+@import "./component/result/result-info/result-info.less";
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./component/fonts/MaterialIcons-Regular.woff') format('woff'), url('./component/fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+@media (min-width: 380px) {
+  body {
+    height: 779px;
+    background: #E9EFFC;
+
+    .main-article {
+      max-width: 1200px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      .main-aside {
+        .promo {
+          background: #E9EFFC;
+
+          a {
+            display: none;
+          }
+        }
+      }
+
+      .main-container {
+        max-width: 816px;
+        min-width: 390px;
+        height: auto;
+        background: #F5F8FF;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        // Форма контактных данных
+        .contact {
+          width: auto;
+          height: auto;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          &-title {
+            width: 100%;
+            margin-left: 40px;
+          }
+
+          &-form {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 40px;
+          }
+
+          &-button {
+            display: none;
+          }
+        }
+
+        // Форма выбора продукта
+        .select {
+          width: 90%;
+          height: auto;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-left: -40px;
+
+          &-link {
+            display: none;
+          }
+
+          &-title {
+            width: 90%;
+          }
+
+          &-button {
+            margin-left: 20px;
+            margin-bottom: 40px;
+          }
+        }
+        .result {
+          width: 90%;
+          align-items: flex-start;
+          &-header {
+            width: 100%;
+          }
+          &-message {
+            width: 100%;
+            text-align: left;
+          }
+          &-info {
+            width: 100%;
+            &--main {
+              width: 100%;
+            }
+            &--list {
+              width: 100%;
+            }
+            &--item {
+              width: 90%;
+            }
+            &--item:nth-of-type(3) {
+              display: flex;
+              flex-direction: row;
+            }
+          }
+          &-total {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  body {
+    .main-container {
+     
+      height: 110% !important;
+      .select {
+        margin-left: 0 !important;
+        &-button {
+          margin-bottom: 20px;
+        }
+      }
+      .result {
+        &-info {
+          &--item:nth-of-type(3) {
+            display: block !important;
+          }
+        }
+      }
+    }
+  }
+}

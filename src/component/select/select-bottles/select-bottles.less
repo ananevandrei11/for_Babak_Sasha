@@ -1,0 +1,97 @@
+.select {
+
+    &-form--bottles {
+        position: relative;
+        width: 280px;
+        height: 130px;
+        margin-top: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        label {
+            img {
+                width: 80px;
+                height: 130px;
+                border-radius: 10px;
+            }
+        }
+
+        input {
+            display: none;
+        }
+
+        label:before {
+            position: absolute;
+            content: "";
+            width: 8px;
+            height: 8px;
+            top: 10px;
+            left: 65px;
+            background-color: #D5DDE0;
+            border: 0px solid #fff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        label:nth-of-type(2):before {
+            position: absolute;
+            content: "";
+            width: 8px;
+            height: 8px;
+            top: 10px;
+            left: 165px;
+            background-color: #D5DDE0;
+            border: 0px solid #fff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        label:nth-of-type(3):before {
+            position: absolute;
+            content: "";
+            width: 8px;
+            height: 8px;
+            top: 10px;
+            left: 265px;
+            background-color: #D5DDE0;
+            border: 0px solid #fff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:checked+label:before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            top: 10px;
+            left: 65px;
+            background: #FFC369;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:nth-of-type(2):checked+label:nth-of-type(2):before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            top: 10px;
+            left: 165px;
+            background: #FFC369;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:nth-of-type(3):checked+label:nth-of-type(3):before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            top: 10px;
+            left: 265px;
+            background: #FFC369;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.select {
+    &-form--datetime {
+        margin-left: 20px;
+    }
+    &-title--datetime {
+        width: 202px;
+        height: 23px;
+        margin-top: 19px;
+        margin-left: 0;
+    }
+
+    &-subtitle {
+        font-style: normal;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 13px;
+        letter-spacing: 0.05em;
+        color: #BABDC2;
+
+        &:nth-of-type(1) {
+            margin-top: 20px;
+        }
+
+        &:nth-of-type(2) {
+            margin-top: 15px;
+        }
+    }
+
+    &-date {
+        width: 296px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+
+        &-day {
+            width: 30px;
+            height: 30px;
+            margin-left: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #E5EDFF;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:nth-of-type(1) {
+                margin-left: 0px;
+            }
+
+            &:nth-of-type(6),
+            &:nth-of-type(7) {
+                p:nth-of-type(2) {
+                    color: #FD7562;
+                }
+            }
+
+            p:nth-of-type(1) {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;
+                color: #455273;
+                margin: 0;
+            }
+
+            p:nth-of-type(2) {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 9px;
+                line-height: 11px;
+                text-align: center;
+                color: #9CAEDD;
+                margin: 0;
+            }
+        }
+    }
+
+    &-time {
+        width: 296px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &-part {
+            width: 92px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #E5EDFF;
+            border-radius: 15px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #455273;
+            cursor: pointer;
+        }
+    }
+
+    .checked-date {
+        background: #FFC369;
+        color: #FFFFFF !important;
+        p {
+            color: #FFFFFF !important;
+        }
+    }
+    .checked-time {
+        background: #FFC369;
+        color: #FFFFFF !important;
+        p {
+            color: #FFFFFF !important;
+        }
+    }
+}
